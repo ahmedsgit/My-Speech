@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/style.css">
+    <title>My Speech</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/icon/icon.png" />
+</head>
+
+<body>
+    <div class="container popup">
+        <h1>My Speech</h1>
+        <button id="toggle" class="btn btn-toggle">Add My Own</button>
+        <div id="text-box" class="text-box">
+            <div id="close" class="close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <h3> Choose a voice 📣</h3>
+            <select id="voices"></select>
+            <textarea id="text" placeholder="Enter what you want to hear.."></textarea>
+            <button class="btn" id="read">Hear🔊</button>
+        </div>
+        <div class="container-body" id="body"></div>
+    </div>
+    <script src="resources/script.js"></script>
+</body>
+
+</html>
