@@ -125,9 +125,13 @@ function setVoice(e) {
 speechSynthesis.addEventListener('voiceschanged', getVoices);
 
 // toggle text box
-toggleBtn.addEventListener('click', () => document.getElementById('text-box').classList.toggle('show'));
+toggleBtn.addEventListener('click', () => {
+    document.getElementById('text-box').classList.toggle('show');
+});
 // close btn
-closeBtn.addEventListener('click', () => document.getElementById('text-box').classList.remove('show'));
+closeBtn.addEventListener('click', () => {
+    document.getElementById('text-box').classList.remove('show');
+});
 // Change voice
 voiceSelector.addEventListener('change', setVoice);
 

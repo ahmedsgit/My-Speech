@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Pacifico&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -6,8 +8,7 @@ body {
     background: #2C3E50;
     background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
     background: linear-gradient(to right, #4CA1AF, #2C3E50);
-
-    font-family: sans-serif;
+    font-family: 'Chilanka', cursive, sans-serif;
     min-height: 100vh;
     margin: 0;
 }
@@ -15,6 +16,7 @@ body {
 h1 {
     text-align: center;
     color: #fff;
+    font-family: 'Pacifico', cursive, sans-serif;
 }
 
 .container {
@@ -24,15 +26,20 @@ h1 {
 
 .btn {
     background: transparent;
-    border: 2px solid #fff;
-    border-radius: 4px;
+    border: 1px solid #fff;
     color: #fff;
     font-size: 16px;
-    padding: 8px;
+    font-weight: bold;
+    font-family: 'Chilanka', cursive, sans-serif;
 }
 
 .btn:active {
     transform: scale(0.98);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    border: 2px solid #fff;
 }
 
 .btn:focus,
@@ -44,10 +51,21 @@ select:focus {
     display: block;
     margin: auto;
     margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
 
+.btn-toggle:hover {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to left, #1F1C18, #8E0E00);
+    background: linear-gradient(to left, #1F1C18, #8E0E00);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
 .text-box {
-    width: 70%;
+    width: 600px;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -57,7 +75,10 @@ select:focus {
     background: linear-gradient(to left, #1F1C18, #8E0E00);
     color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     transition: all .5s ease-in-out;
 }
 
@@ -70,23 +91,25 @@ select:focus {
     background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
     background: linear-gradient(to right, #4CA1AF, #2C3E50);
     border: 0;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
     color: #fff;
     font-size: 12px;
     height: 30px;
     width: 100%;
     font-size: 14px;
+    padding-left: 10px;
+    font-family: 'Chilanka', cursive, sans-serif;
 }
 
 .text-box select option {
     background-color: #2C3E50;
     background-color: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
     background-color: linear-gradient(to right, #4CA1AF, #2C3E50);
-
 }
 
-
 .text-box textarea {
+    font-family: 'Chilanka', cursive, sans-serif;
     border: 1px #dadada solid;
     border-radius: 3px;
     font-size: 16px;
@@ -96,16 +119,23 @@ select:focus {
     height: 150px;
 }
 
+.text-box textarea:focus {
+    outline: none;
+}
+
 .text-box .close {
     float: right;
     text-align: right;
     cursor: pointer;
+    margin: -20px;
 }
 
 .fa-close {
     font-size: 25px;
     color: #d9d9d9;
     cursor: pointer;
+    border: 1px solid transparent;
+    padding: 3px 5px;
 }
 
 .fa-close:active {
@@ -114,18 +144,31 @@ select:focus {
 
 .fa-close:hover {
     color: #4CA1AF;
+    border: 1px solid #4CA1AF;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-top-right-radius: 15px;
 }
 
 .text-box .btn {
     display: block;
     margin: 0 auto;
     width: 20%;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.text-box .btn:hover {
+    background: #2C3E50;
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
 }
 
 .container-body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
+    font-family: 'Chilanka', cursive, sans-serif;
 }
 
 .container-body .box {
